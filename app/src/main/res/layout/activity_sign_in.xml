@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_bg"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/SignIn_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/study_now_logo" />
+
+    <TextView
+        android:id="@+id/SignIn_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignIn_logo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SignIn_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="80dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignIn_getstart">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/SignIn_emailIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_email"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/SignIn_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="      Nhập email của bạn"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/SignIn_emailIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/SignIn_emailIcon"
+                app:layout_constraintTop_toTopOf="@id/SignIn_emailIcon" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/SignIn_passwordIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <EditText
+                android:id="@+id/SignIn_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="      Mật khẩu"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/SignIn_passwordIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/SignIn_passwordIcon"
+                app:layout_constraintTop_toTopOf="@id/SignIn_passwordIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#17ACAC"
+        app:cardElevation="24dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintStart_toEndOf="@id/SignIn_container"
+        app:layout_constraintEnd_toEndOf="@id/SignIn_container"
+        app:layout_constraintTop_toTopOf="@id/SignIn_container"
+        app:layout_constraintBottom_toBottomOf="@id/SignIn_container">
+
+        <ImageButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="#17ACAC"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_forward" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/SignIn_newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/poppins"
+        android:text="Chưa có tài khoản? Đăng ký ngay"
+        android:textColor="#17ACAC"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignIn_forget" />
+
+    <TextView
+        android:id="@+id/SignIn_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Quên mật khẩu ?"
+        android:textColor="@color/red"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignIn_container" />
+
+    <TextView
+        android:id="@+id/SignIn_getstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="Hãy cùng học nhé !!!"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignIn_welcome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
