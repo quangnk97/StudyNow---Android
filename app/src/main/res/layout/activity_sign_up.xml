@@ -169,7 +169,7 @@
         android:layout_marginTop="48dp"
         android:fontFamily="@font/poppins"
         android:text="Đã có tài khoản? Đăng nhập ngay"
-        android:textColor="#17ACAC"
+        android:textColor="#4951EC"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

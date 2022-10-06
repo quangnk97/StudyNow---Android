@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/SignIn_logo"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.015"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/study_now_logo" />
@@ -123,7 +123,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:backgroundTint="#17ACAC"
+        android:backgroundTint="#4951EC"
         app:cardElevation="24dp"
         app:cardCornerRadius="35dp"
         app:layout_constraintStart_toEndOf="@id/SignIn_container"
@@ -136,7 +136,7 @@
             android:layout_width="43dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
-            android:background="#17ACAC"
+            android:background="#4951EC"
             android:scaleType="fitXY"
             android:src="@drawable/ic_arrow_forward" />
 
@@ -146,13 +146,14 @@
         android:id="@+id/SignIn_newUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="112dp"
         android:fontFamily="@font/poppins"
         android:text="Chưa có tài khoản? Đăng ký ngay"
-        android:textColor="#17ACAC"
+        android:textColor="#4951EC"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SignIn_forget" />
 
